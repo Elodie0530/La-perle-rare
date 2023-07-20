@@ -2,3 +2,9 @@
   text-align: center;
   background-color: aquamarine;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  color: rgb(199, 78, 78);
+}
