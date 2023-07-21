@@ -32,56 +32,73 @@ CREATE TABLE chapter (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO chapter (title, chapter, image, is_first) VALUES 
-("Perdu", "Perdu :
-Vous vous êtes égaré Aventurier, la perle recherchée n'est pas ici.
+("Perdu", "
+Vous vous êtes égaré Aventurier, 
+La perle recherchée n'est pas ici
 Il va vous falloir recommencer :/", "/perdu.jpg", false),
 
 ("La Taverne" ,
 "Valeureux Aventurier, 
+
 A la taverne du village ou vous avez fait étape sur votre chemin.
 Vous entendez parler d'un trésor local perdu, il s'agit d'une perle d'une grande rareté.
 Qui d'après ce que l'on raconte, conférerait des pouvoirs extraordinaires à son détenteur.
-Etes-vous prêt à vous lancer à sa recherche ? Par où commencer :", "/la_taverne.jpg", true),
 
-("Le Village", NULL, NULL, false),
+Etes-vous prêt à vous lancer à sa recherche ? 
+
+Par où commencer :", "/la_taverne.jpg", true),
+
+("Le Village", NULL, "/le_village.jpg", false),
 
 ("La Forêt", "
 Vous vous enfoncez au coeur de la forêt qui se densifie de plus en plus.
-A un embranchement, vous pouvez aller soit vers :", "/la_foret.jpg", false),
+A un embranchement, vous pouvez aller soit vers :", "/la_foret.png", false),
 
-("Le Château", NULL, NULL, false),
+("Le Château", NULL, "/le_château.png", false),
 
 ("Le Lac", "
 Après quelques heures de marche, vous arrivez au bord d'un immense lac d'un bleu azur.
 Sur la plage, se trouvent des constructions en bois avec des personnes à proximités.
 Il y a également quelques navires d'amarrer au ponton.
-Où aller vous ?", "/le_lac.jpg", false),
 
-("La Cabane", NULL, NULL, false),
+Où allez-vous ?", "/le_lac.jpg", false),
+
+("Les Cabanes", NULL, "/cabanes.jpg", false),
 
 ("Le Navire", "
 Vous vous approchez du ponton, et vous apprêtez à monter à bord du plus gros des navires.
-Lorsque l'on vous interpelle : `Moussaillon, cela peut être très dangereux, d'oser s'aventurer sur ce lac` 
+Lorsque l'on vous interpelle : ``Moussaillon, cela peut être très dangereux, d'oser s'aventurer sur ce lac`` 
+
 Que faîte vous ?", "/le_navire.jpg", false),
 
-("On Descend", NULL, NULL, false),
+("On Descend", NULL, "/descend.png", false),
 
 ("On Monte", "
-Une fois monter à bord, le capitaine du navire vous présente une carte du lac. Et il fait des kilomètres et des kilomètres de diamètres.
-Après avoir discuté avec celui-ci, il se trouve que ce lac contient beaucoup d'espèces différentes dont des huîtres géantes.
+Une fois monter à bord, le capitaine du navire vous présente une carte du lac. 
+Et il fait des kilomètres et des kilomètres de diamètres.
+Après avoir discuté avec celui-ci, 
+il se trouve que ce lac contient beaucoup d'espèces différentes dont des huîtres géantes.
+
 Quelle direction prenez-vous ?", "/monte.jpg", false),
 
-("Les Huîtres Géantes", NULL, NULL, false),
+("Les Huîtres Géantes", NULL, "/huître_géante.jpg", false),
 
 ("Le Kraken", "
 
 Une fois monter à bord du navire, vous vous dirigez vers le centre du lac, 
 et l'eau commence à s'agiter et change de couleur pour devenir d'un bleu électrique.
-Le navire ralenti, un tourbillon se forme, et voici qu'apparaît des tentacules. Vous êtes aux prises avec un Kraken.
+Le navire ralenti, un tourbillon se forme, et voici qu'apparaît des tentacules... 
+
+Vous êtes aux prises avec un Kraken.
 ", "/le_kraken.jpg", false),
 
-("Les Naïades", "Après un combat acharné, ou vous sortez vainqueur, apparaît des Naïades, ces déesses aquatiques protectrices de leur milieu 
-`Vous avez fait preuve de beaucoup de courage lors de votre périple Aventurier pour vous récompenser, voici une perle d'une grande rareté, prenez en soin, elle pourrait vous servir.`
+("Les Naïades", "Après un combat acharné, ou vous sortez vainqueur, apparaît des Naïades, 
+ces déesses aquatiques protectrices de leur milieu 
+
+`` Vous avez fait preuve de beaucoup de courage lors de votre périple Aventurier, 
+pour vous récompenser, voici une perle d'une grande rareté, 
+prenez en soin, elle pourrait vous servir. ``
+
 Serait-ce de cette fameuse perle, dont j'avais ouï dire à la taverne, il y a de cela plusieurs lunes ?", "/la_perle.png", false);
 
 CREATE TABLE lead_to (
@@ -105,10 +122,10 @@ INSERT INTO lead_to (name, chapter_start_id, chapter_end_id) VALUES
 ("Vous êtes sûr ?", (select id from chapter where title="Le Château"), (select id from chapter where title="Perdu")),
 (":(", (select id from chapter where title="Perdu"), (select id from chapter where title="La Taverne")),
 
-("La Cabane", (select id from chapter where title="Le Lac"), (select id from chapter where title="La Cabane")),
+("Les Cabanes", (select id from chapter where title="Le Lac"), (select id from chapter where title="Les Cabanes")),
 ("Le Navire", (select id from chapter where title="Le Lac"), (select id from chapter where title="Le Navire")),
 
-("Vous êtes sûr ?", (select id from chapter where title="La Cabane"), (select id from chapter where title="Perdu")),
+("Vous êtes sûr ?", (select id from chapter where title="Les Cabanes"), (select id from chapter where title="Perdu")),
 (":(", (select id from chapter where title="Perdu"), (select id from chapter where title="La Taverne")),
 
 ("On Descend", (select id from chapter where title="Le Navire"), (select id from chapter where title="On Descend")),
