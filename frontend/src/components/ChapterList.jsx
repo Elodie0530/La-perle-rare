@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./ChapterList.css";
 
 function ChapterList() {
   const [chapters, setChapters] = useState();
@@ -19,14 +20,6 @@ function ChapterList() {
       });
   }, []);
 
-  // const Chapter() => {
-  //   if (setIndex != % 2 === 0 || index[12]) {
-  //     return {chapters}};
-  //   else (setIndex % 2 === 0) {
-  //     return {chaptersIndex[0]};
-  //   };
-  // };
-
   return (
     currentChapter && (
       <>
@@ -34,10 +27,11 @@ function ChapterList() {
         <p>{currentChapter.chapter}</p>
         <img
           src={`${import.meta.env.VITE_BACKEND_URL}${currentChapter.image}`}
-          alt="`aucunes images"
+          alt="`images du chapitre"
         />
         {currentChapter.actions.map((action) => (
           <button
+            className="buttons"
             type="button"
             onClick={() => {
               setCurrentChapter(
