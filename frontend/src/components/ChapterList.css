@@ -1,6 +1,12 @@
 div {
-  color:black;
-  /* text-align: justify; */
+  color: black;
   white-space: break-spaces;
-  font-family:'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (max-width: 600px) {
+  .images {
+    width: 100%;
+    height: 100%;
+  }
 }

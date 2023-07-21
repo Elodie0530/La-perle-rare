@@ -26,6 +26,7 @@ function ChapterList() {
         <p>{currentChapter.title}</p>
         <p>{currentChapter.chapter}</p>
         <img
+          className="images"
           src={`${import.meta.env.VITE_BACKEND_URL}${currentChapter.image}`}
           alt="`images du chapitre"
         />
