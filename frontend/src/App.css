@@ -24,11 +24,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color:black;
+  color: black;
   border-radius: 1rem;
   width: 15rem;
   box-shadow: 0 3px #333131;
   margin-top: 1rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    background-size: 300% 100%;
+    margin: 0px;
+  }
+
+  .navbar {
+    line-height: 160%;
+    margin: 0px;
+  }
+  .h2 {
+    margin: 0;
+  }
 }
