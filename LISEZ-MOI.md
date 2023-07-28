@@ -1,3 +1,16 @@
+# La Perle Rare
+
+Projet de type "Livres dont vous êtes le héros"
+Le principe, vos actions déterminent l'histoire.
+
+Réaliser dans le cadre du dernier checkpoint avec la Wild Code School de Reims.
+Reprenant tout ce que l'on a appris durant les 5 mois de la formation (février - juillet 20223).
+Réalisation individuelle en 2 jours au mois de juillet 2023.
+
+![Ecran de départ de l'histoire La Perle Rare version ordinateur, "La Taverne", image d'une taverne, bouton de choix pour aller soit vers "Le village", soit vers "La Forêt"](./frontend/src/assets/screens/Screen-Start.png)
+
+![Ecran de fin de l'histoire "La Perle Rare" version mobile, Les Naïades, image d'une perle, bouton de "félicitations"](./frontend/src/assets/screens/Screen-mobile-End.png)
+
 ## Concept
 
 Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants la stack React-Node-MySQL telle qu'enseignée à la Wild Code School. Il est préconfiguré avec un ensemble d'outils qui aideront les élèves à produire un code correspondant mieux aux standards du monde du travail et plus facile à maintenir, tout en restant simple à utiliser.
