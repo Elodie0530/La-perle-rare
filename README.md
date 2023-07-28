@@ -1,3 +1,18 @@
+# La Perle Rare 
+
+"Books of which you are the hero" type project
+The premise, your actions determine the story.
+
+Realize within the framework of the last checkpoint with the Wild Code School of Reims.
+Taking up everything we learned during the 5 months of training (February - July 20223).
+Individual realization in 2 days in July 2023.
+
+!["Screen start story `La Perle Rare` desktop version, The Tavern, image of a tavern, choice button to go either to `The village` or to `The Forest`"] (.\frontend\src\assets\screens\Screen Start.png)
+
+!["Screen end story `La Perle Rare` mobile version, The naiads, image of pearl, button `congratulations`"] (.\frontend\src\assets\screens\Screen mobile End.png)
+
+
+
 ## Concept
 
 This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
