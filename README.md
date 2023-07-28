@@ -7,9 +7,9 @@ Realize within the framework of the last checkpoint with the Wild Code School of
 Taking up everything we learned during the 5 months of training (February - July 20223).
 Individual realization in 2 days in July 2023.
 
-!["Screen start story `La Perle Rare` desktop version, The Tavern, image of a tavern, choice button to go either to `The village` or to `The Forest`"] (.\frontend\src\assets\screens\Screen Start.png)
+!["Screen start story `La Perle Rare` desktop version, The Tavern, image of a tavern, choice button to go either to `The village` or to `The Forest`"](.\frontend\src\assets\screens\Screen-Start.png)
 
-!["Screen end story `La Perle Rare` mobile version, The naiads, image of pearl, button `congratulations`"] (.\frontend\src\assets\screens\Screen mobile End.png)
+!["Screen end story `La Perle Rare` mobile version, The naiads, image of pearl, button `congratulations`"](.\frontend\src\assets\screens\Screen-mobile-End.png)
 
 
 
