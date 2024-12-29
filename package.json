@@ -26,8 +26,8 @@
   "author": "Wild Code School",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.6.0",
+    "concurrently": "^9.1.1",
     "cross-env": "^7.0.3",
-    "husky": "^8.0.3"
+    "husky": "^9.1.7"
   }
 }
