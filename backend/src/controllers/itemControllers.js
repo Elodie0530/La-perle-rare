@@ -1,3 +1,6 @@
+// problem deploy railway sql table item doesen't exist
+
+/*
 const models = require("../models");
 
 const browse = (req, res) => {
@@ -88,4 +91,5 @@ module.exports = {
   edit,
   add,
   destroy,
-};
+}; 
+*/
